@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82CC7BD3-9A14-481D-BCF6-804D0184136D}|Lab2\\Lab2.csproj|c:\\users\\name\\downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\lab2\\lab2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{82CC7BD3-9A14-481D-BCF6-804D0184136D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab2\\Lab2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Lab2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab2\\Lab2\\MainWindow.xaml",
+              "RelativeToolTip": "Lab2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-02T16:13:11.628Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

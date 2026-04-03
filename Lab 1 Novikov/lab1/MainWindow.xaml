@@ -1,0 +1,200 @@
+﻿<Window x:Class="lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Конструктор существ" Height="700" Width="950"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E1E">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Background" Value="#3A3A3A"/>
+            <Setter Property="Foreground" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#4A4A4A"/>
+                    <Setter Property="BorderBrush" Value="#777777"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#E0E0E0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#2D2D2D"/>
+            <Setter Property="Foreground" Value="#E0E0E0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style TargetType="ListBox">
+            <Setter Property="Background" Value="#2D2D2D"/>
+            <Setter Property="Foreground" Value="#E0E0E0"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя панель с заголовком -->
+        <Border Grid.Row="0" Background="#2A2A2A" CornerRadius="6" Padding="12" Margin="0,0,0,8">
+            <TextBlock Text="📦 ГЕНЕРАТОР ПЕРСОНАЖЕЙ 📦" FontSize="22" FontWeight="Bold" 
+                       HorizontalAlignment="Center" Foreground="#D4A574" FontFamily="Consolas"/>
+        </Border>
+
+        <!-- Панель выбора папки с картинками -->
+        <Border Grid.Row="1" Background="#2A2A2A" CornerRadius="6" Padding="10" Margin="0,0,0,8">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="📁 БИБЛИОТЕКА СПРАЙТОВ" FontWeight="Bold" 
+                           VerticalAlignment="Center" Foreground="#D4A574"/>
+                <Button Grid.Column="1" Content="📂 ОБЗОР ПАПКИ" Click="SelectFolder_Click" Width="140"/>
+            </Grid>
+        </Border>
+
+        <!-- Основная область с тремя колонками -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Левая колонка - галерея спрайтов -->
+            <Border Grid.Column="0" Background="#2A2A2A" CornerRadius="6" Padding="8" Margin="0,0,5,0">
+                <StackPanel>
+                    <TextBlock Text="🎨 ВЫБОР СПРАЙТА" FontWeight="Bold" Margin="0,0,0,8" 
+                               HorizontalAlignment="Center" Foreground="#D4A574"/>
+                    <ListBox x:Name="IconsListBox" Height="320" Margin="0,0,0,0" 
+                             SelectionChanged="IconsListBox_SelectionChanged"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Центральная колонка - форма редактирования -->
+            <Border Grid.Column="1" Background="#2A2A2A" CornerRadius="6" Padding="10" Margin="5,0,5,0">
+                <StackPanel>
+                    <TextBlock Text="⚙️ ПАРАМЕТРЫ ЮНИТА" FontWeight="Bold" Margin="0,0,0,12" 
+                               HorizontalAlignment="Center" Foreground="#D4A574" FontSize="15"/>
+
+                    <Grid Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Название:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="NameTextBox" Grid.Column="1" Margin="5,0,0,0"/>
+                    </Grid>
+
+                    <Grid Margin="0,5,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Выбран спрайт:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="SelectedIconTextBox" Grid.Column="1" IsReadOnly="True" 
+                                 Background="#3A3A3A" Margin="5,0,0,0"/>
+                    </Grid>
+
+                    <Separator Margin="0,8,0,8" Background="#555555"/>
+
+                    <TextBlock Text="📊 ХАРАКТЕРИСТИКИ" FontWeight="Bold" Margin="0,0,0,8" 
+                               Foreground="#D4A574"/>
+
+                    <Grid Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Базовое HP:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="BaseLifeTextBox" Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid Margin="0,5,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Множитель HP:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="LifeModifierTextBox" Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid Margin="0,5,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Базовое золото:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="BaseGoldTextBox" Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid Margin="0,5,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Множитель золота:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="GoldModifierTextBox" Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid Margin="0,5,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Шанс появления:" VerticalAlignment="Center"/>
+                        <TextBox x:Name="SpawnChanceTextBox" Grid.Column="1"/>
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <Button x:Name="AddEnemyButton" Content="➕ СОЗДАТЬ" 
+                                Click="AddEnemy_Click" Padding="12,6" Background="#2C5F2D"/>
+                        <Button x:Name="DeleteEnemyButton" Content="🗑️ УДАЛИТЬ" 
+                                Click="DeleteEnemy_Click" Padding="12,6" Background="#8B3A3A"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Правая колонка - список существ -->
+            <Border Grid.Column="2" Background="#2A2A2A" CornerRadius="6" Padding="8" Margin="5,0,0,0">
+                <StackPanel>
+                    <TextBlock Text="📋 СПИСОК ЮНИТОВ" FontWeight="Bold" Margin="0,0,0,8" 
+                               HorizontalAlignment="Center" Foreground="#D4A574"/>
+                    <ListBox x:Name="EnemiesListBox" Height="320" Margin="0,0,0,0" 
+                             SelectionChanged="EnemiesListBox_SelectionChanged"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Нижняя панель с кнопками -->
+        <Border Grid.Row="3" Background="#2A2A2A" CornerRadius="6" Padding="8" Margin="0,8,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="💾 ЭКСПОРТ" Click="SaveToJson_Click" Padding="12,6" Width="110"/>
+                <Button Content="📂 ИМПОРТ" Click="LoadFromJson_Click" Padding="12,6" Width="110"/>
+                <Button Content="⚠️ СБРОС" Click="ClearAll_Click" Padding="12,6" Width="110" Background="#8B3A3A"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

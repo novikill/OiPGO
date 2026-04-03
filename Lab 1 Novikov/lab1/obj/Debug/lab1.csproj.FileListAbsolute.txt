@@ -1,0 +1,99 @@
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\MainWindow.baml
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\MainWindow.g.cs
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\App.g.cs
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1_MarkupCompile.cache
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.g.resources
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\lab1.exe.config
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\lab1.exe
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\lab1.pdb
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Buffers.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Memory.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Text.Json.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Buffers.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Memory.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Text.Json.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.csproj.CopyComplete
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.exe
+C:\Users\Татьяна\source\repos\lab1\lab1\obj\Debug\lab1.pdb
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\lab1.exe.config
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\lab1.exe
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\lab1.pdb
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Buffers.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Memory.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Text.Json.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Buffers.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Memory.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Text.Json.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\MainWindow.baml
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\MainWindow.g.cs
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\App.g.cs
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1_MarkupCompile.cache
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.g.resources
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.csproj.Up2Date
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.exe
+C:\Users\Name\Downloads\фоменко\lab1\lab1\obj\Debug\lab1.pdb
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\lab1.exe.config
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\lab1.exe
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\lab1.pdb
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Buffers.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Memory.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Text.Json.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Buffers.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Memory.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Text.Json.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\MainWindow.baml
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\MainWindow.g.cs
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\App.g.cs
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1_MarkupCompile.cache
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.g.resources
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.csproj.Up2Date
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.exe
+C:\Users\Name\Downloads\фоменко\Lab 1 Novikov\lab1\obj\Debug\lab1.pdb

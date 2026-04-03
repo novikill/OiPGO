@@ -1,0 +1,191 @@
+﻿<Window x:Class="Lab4._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Конструктор персонажей" Height="720" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        Background="#1a1a2e">
+
+    <Window.Resources>
+        <!-- Стиль для кнопок -->
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Background" Value="#0f3460"/>
+            <Setter Property="Foreground" Value="#e94560"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#e94560"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#e94560"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Стиль для текстовых блоков -->
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <!-- Стиль для текстовых полей -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#16213e"/>
+            <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="BorderBrush" Value="#e94560"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <!-- Стиль для ComboBox -->
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="#16213e"/>
+            <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="BorderBrush" Value="#e94560"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <!-- Стиль для ListBox -->
+        <Style TargetType="ListBox">
+            <Setter Property="Background" Value="#16213e"/>
+            <Setter Property="Foreground" Value="#eeeeee"/>
+            <Setter Property="BorderBrush" Value="#e94560"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <!-- Стиль для рамок -->
+        <Style x:Key="PanelBorder" TargetType="Border">
+            <Setter Property="Background" Value="#0f3460"/>
+            <Setter Property="BorderBrush" Value="#e94560"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Верхний баннер -->
+        <Border Grid.Row="0" Grid.ColumnSpan="3" 
+                Background="#0f3460" 
+                Padding="10" 
+                CornerRadius="8"
+                Margin="0,0,0,10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="⚔️" FontSize="22" Margin="0,0,10,0"/>
+                <TextBlock Text="КОНСТРУКТОР ЮНИТОВ" FontSize="22" FontWeight="Bold" 
+                           Foreground="#e94560" FontFamily="Consolas"/>
+                <TextBlock Text="⚔️" FontSize="22" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Левая панель - иконки -->
+        <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource PanelBorder}">
+            <StackPanel Margin="10">
+                <TextBlock Text="🎨 БИБЛИОТЕКА СПРАЙТОВ" FontSize="14" FontWeight="Bold" 
+                           Margin="0,0,0,10" TextAlignment="Center" Foreground="#e94560"/>
+                <Button Content="📂 ВЫБРАТЬ ПАПКУ" Click="SelectFolder_Click" 
+                        Margin="0,0,0,10" Padding="8" Height="35"/>
+                <ListBox x:Name="IconsListBox" Height="300" Margin="0" 
+                         SelectionChanged="IconsListBox_SelectionChanged"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Центральная панель - форма создания/редактирования -->
+        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource PanelBorder}" Width="350">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="12">
+                    <TextBlock Text="⚙️ ПАРАМЕТРЫ ЮНИТА" FontSize="14" FontWeight="Bold" 
+                               Margin="0,0,0,12" TextAlignment="Center" Foreground="#e94560"/>
+
+                    <TextBlock Text="🏷️ НАЗВАНИЕ:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="NameTextBox" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="📌 ТИП ЮНИТА:" Margin="0,5,0,0"/>
+                    <ComboBox x:Name="EnemyTypeComboBox" Margin="0,0,0,5" 
+                              SelectionChanged="EnemyTypeComboBox_SelectionChanged"/>
+
+                    <TextBlock Text="🖼️ ВЫБРАННЫЙ СПРАЙТ:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="SelectedIconTextBox" IsReadOnly="True" 
+                             Background="#16213e" Margin="0,0,0,5"/>
+
+                    <Separator Margin="0,10,0,10" Background="#e94560"/>
+
+                    <TextBlock Text="📊 ХАРАКТЕРИСТИКИ" FontSize="13" FontWeight="Bold" 
+                               Margin="0,0,0,8" Foreground="#e94560"/>
+
+                    <TextBlock Text="❤️ БАЗОВОЕ ЗДОРОВЬЕ:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="BaseLifeTextBox" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="📈 МОДИФИКАТОР ЗДОРОВЬЯ:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="LifeModifierTextBox" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="💰 БАЗОВОЕ ЗОЛОТО:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="BaseGoldTextBox" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="📊 МОДИФИКАТОР ЗОЛОТА:" Margin="0,5,0,0"/>
+                    <TextBox x:Name="GoldModifierTextBox" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="🎲 ШАНС ПОЯВЛЕНИЯ (0-1):" Margin="0,5,0,0"/>
+                    <TextBox x:Name="SpawnChanceTextBox" Margin="0,0,0,5"/>
+
+                    <StackPanel x:Name="AdditionalFieldsPanel" Margin="0,5,0,5"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,5">
+                        <Button x:Name="AddEnemyButton" Content="➕ ДОБАВИТЬ" 
+                                Click="AddEnemy_Click" Padding="12,6" Background="#2C5F2D"/>
+                        <Button x:Name="DeleteEnemyButton" Content="🗑️ УДАЛИТЬ" 
+                                Click="DeleteEnemy_Click" Padding="12,6" Background="#8B3A3A"/>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Правая панель - список противников -->
+        <Border Grid.Row="1" Grid.Column="2" Style="{StaticResource PanelBorder}">
+            <StackPanel Margin="10">
+                <TextBlock Text="📋 СПИСОК ЮНИТОВ" FontSize="14" FontWeight="Bold" 
+                           Margin="0,0,0,10" TextAlignment="Center" Foreground="#e94560"/>
+                <ListBox x:Name="EnemiesListBox" Height="300" Margin="0" 
+                         SelectionChanged="EnemiesListBox_SelectionChanged"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Нижняя панель -->
+        <Border Grid.Row="2" Grid.ColumnSpan="3" 
+                Background="#0f3460" 
+                CornerRadius="8" 
+                Margin="0,10,0,0" 
+                Padding="8">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="💾 СОХРАНИТЬ" Click="SaveToJson_Click" 
+                        Padding="10" Margin="5" Width="110"/>
+                <Button Content="📂 ЗАГРУЗИТЬ" Click="LoadFromJson_Click" 
+                        Padding="10" Margin="5" Width="110"/>
+                <Button Content="⚠️ ОЧИСТИТЬ" Click="ClearAll_Click" 
+                        Padding="10" Margin="5" Width="110" Background="#8B3A3A"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

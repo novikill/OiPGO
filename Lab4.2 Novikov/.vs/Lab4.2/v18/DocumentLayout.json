@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB3D42-6292-43B9-8F1C-BBEC0F1DDF4B}|Lab4.2\\Lab4.2.csproj|c:\\users\\name\\downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\lab4.2 novikov\\lab4.2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D3CB3D42-6292-43B9-8F1C-BBEC0F1DDF4B}|Lab4.2\\Lab4.2.csproj|solutionrelative:lab4.2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB3D42-6292-43B9-8F1C-BBEC0F1DDF4B}|Lab4.2\\Lab4.2.csproj|C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\lab4.2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CB3D42-6292-43B9-8F1C-BBEC0F1DDF4B}|Lab4.2\\Lab4.2.csproj|solutionrelative:lab4.2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\Lab4.2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Lab4.2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\Lab4.2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Lab4.2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAQFAAAAAAAAAAAwwBsFAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T16:25:48.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\Lab4.2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Lab4.2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Name\\Downloads\\\u0444\u043E\u043C\u0435\u043D\u043A\u043E\\Lab4.2 Novikov\\Lab4.2\\MainWindow.xaml",
+              "RelativeToolTip": "Lab4.2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-02T16:21:01.084Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
